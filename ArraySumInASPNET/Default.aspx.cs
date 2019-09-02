@@ -18,17 +18,14 @@ namespace ArraySumInASPNET
             "900"
             };
 
+            long num = 0;
+            long num2 = 0;
             for (int k = 0; k < arr.Length; k++)
             {
-                double num = Convert.ToDouble(arr[k]);
-                long num2 = Convert.ToInt64(num);
-
-                num2 += num2;
-
-                string num3 = Convert.ToString(num2);
-
-                sum1.Text = num3;
+                num = Convert.ToInt64(arr[k]);
+                num2 += num;
             }
+            sum1.Text = Convert.ToString(num2);
         }
     }
 }
